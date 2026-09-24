@@ -1,0 +1,153 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --background: 120 6% 7%;
+  --foreground: 120 8% 93%;
+  --muted: 120 5% 12%;
+  --muted-foreground: 120 6% 62%;
+  --border: 120 5% 17%;
+  --card: 120 6% 10%;
+  --card-foreground: 120 8% 93%;
+  --primary: 101 60% 36%;
+  --primary-foreground: 120 10% 8%;
+  --accent: 101 55% 32%;
+  --accent-foreground: 120 8% 93%;
+
+  /* Brand system (spec v1): one primary green, one link green */
+  --brand: #57a82a;
+  --brand-ink: #0d130a;
+  --brand-hover: #67bd36;
+  --link: #7cbe4e;
+  --link-hover: #a3d47e;
+  --tint-bg: #141d0e;
+  --tint-border: #2c4419;
+  --tint-hover: #1a2612;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  color-scheme: dark;
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  min-height: 100vh;
+  background: #101210;
+  color: hsl(var(--foreground));
+  font-family: var(--font-body), "Segoe UI", -apple-system, BlinkMacSystemFont, Roboto, "Helvetica Neue", Arial, sans-serif;
+  font-size: 16px;
+  line-height: 1.65;
+  -webkit-font-smoothing: antialiased;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+button,
+input,
+select,
+textarea {
+  font: inherit;
+}
+
+::selection {
+  background: rgba(87, 168, 42, 0.35);
+}
+
+:focus-visible {
+  outline: 2px solid var(--brand);
+  outline-offset: 2px;
+}
+
+/* Disabled is a state, not a suggestion */
+button:disabled,
+input:disabled {
+  cursor: not-allowed;
+}
+
+/* Headings: one voice (display font), sentence case, left aligned --------- */
+h1, h2, h3 {
+  font-family: var(--font-display), var(--font-body), sans-serif;
+  font-weight: 600;
+  letter-spacing: 0;
+  line-height: 1.25;
+}
+
+/* Monospace counts: material lists, bills, stats --------------------------- */
+.count {
+  font-family: var(--font-mono-count), ui-monospace, monospace;
+  font-variant-numeric: tabular-nums;
+}
+
+/* Shared surface system: flat, solid, quiet ------------------------------- */
+.card {
+  border-radius: 10px;
+  border: 1px solid #232723;
+  background: #151715;
+}
+
+.viewer-sky {
+  background: #0c0e0c;
+}
+
+.legend-scroll {
+  scrollbar-width: thin;
+  scrollbar-color: #3a3f3a transparent;
+}
+
+/* Small-caps section labels: keep the pattern, lose the shout ------------- */
+.eyebrow {
+  font-size: 0.75rem;
+  font-weight: 600;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: #8a938a;
+}
+
+/* Canvas placeholders: plain dotted area, no glow -------------------------- */
+.canvas-well {
+  border: 1px dashed #333833;
+  background: #0e100e;
+  border-radius: 10px;
+}
+
+/* Tables / bills: denser rows, calmer dividers ------------------------------ */
+.bill-row {
+  border: 1px solid #232723;
+  background: #101210;
+  border-radius: 10px;
+}
+
+input[type="checkbox"] {
+  width: 1.1rem;
+  height: 1.1rem;
+  accent-color: var(--brand);
+}
+
+input[type="range"] {
+  accent-color: var(--brand);
+}
+
+@media (max-width: 640px) {
+  body {
+    font-size: 15px;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+  *, *::before, *::after {
+    animation-duration: 0.01ms !important;
+    transition-duration: 0.01ms !important;
+  }
+}
