@@ -1,0 +1,43 @@
+{
+  "version": "v1",
+  "mcVersion": "1.20+",
+  "atlas": "/atlas/blocks-atlas-v1.png",
+  "blocks": [
+    {
+      "id": "minecraft:stone",
+      "name": "Stone",
+      "x": 0,
+      "y": 0,
+      "w": 16,
+      "h": 16,
+      "avgColor": "#7d7d7d",
+      "lab": [53.6, 0, 0],
+      "category": "natural",
+      "obtainable": true
+    },
+    {
+      "id": "minecraft:oak_planks",
+      "name": "Oak Planks",
+      "x": 16,
+      "y": 0,
+      "w": 16,
+      "h": 16,
+      "avgColor": "#9c7a49",
+      "lab": [56.2, 11.3, 31.4],
+      "category": "wood",
+      "obtainable": true
+    },
+    {
+      "id": "minecraft:water",
+      "name": "Water",
+      "x": 32,
+      "y": 0,
+      "w": 16,
+      "h": 16,
+      "avgColor": "#4a78d6",
+      "lab": [49.3, 16.2, -53.1],
+      "category": "liquid",
+      "obtainable": false
+    }
+  ]
+}

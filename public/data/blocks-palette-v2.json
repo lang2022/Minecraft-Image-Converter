@@ -1,0 +1,1630 @@
+{
+  "version": "v2",
+  "mcVersion": "1.20+",
+  "atlas": {
+    "src": "/atlas/blocks-atlas-v2.png",
+    "textureSrc": "/atlas/blocks-textures-v2.png",
+    "columns": 16,
+    "cellSize": 16,
+    "mode": "vanilla-textures",
+    "generator": "/scripts/generate-palette.mjs"
+  },
+  "blocks": [
+    {
+      "id": "minecraft:white_concrete",
+      "name": "White Concrete",
+      "x": 0,
+      "y": 0,
+      "w": 16,
+      "h": 16,
+      "avgColor": "#cfd5d6",
+      "lab": [
+        84.85,
+        -1.84,
+        -1.21
+      ],
+      "category": "concrete",
+      "obtainable": true
+    },
+    {
+      "id": "minecraft:orange_concrete",
+      "name": "Orange Concrete",
+      "x": 16,
+      "y": 0,
+      "w": 16,
+      "h": 16,
+      "avgColor": "#e06101",
+      "lab": [
+        56.48,
+        46.02,
+        65.3
+      ],
+      "category": "concrete",
+      "obtainable": true
+    },
+    {
+      "id": "minecraft:magenta_concrete",
+      "name": "Magenta Concrete",
+      "x": 32,
+      "y": 0,
+      "w": 16,
+      "h": 16,
+      "avgColor": "#a9309f",
+      "lab": [
+        42.84,
+        60.98,
+        -34.33
+      ],
+      "category": "concrete",
+      "obtainable": true
+    },
+    {
+      "id": "minecraft:light_blue_concrete",
+      "name": "Light Blue Concrete",
+      "x": 48,
+      "y": 0,
+      "w": 16,
+      "h": 16,
+      "avgColor": "#2489c7",
+      "lab": [
+        54.44,
+        -6.31,
+        -40.03
+      ],
+      "category": "concrete",
+      "obtainable": true
+    },
+    {
+      "id": "minecraft:yellow_concrete",
+      "name": "Yellow Concrete",
+      "x": 64,
+      "y": 0,
+      "w": 16,
+      "h": 16,
+      "avgColor": "#f1af15",
+      "lab": [
+        75.71,
+        12.96,
+        76.06
+      ],
+      "category": "concrete",
+      "obtainable": true
+    },
+    {
+      "id": "minecraft:lime_concrete",
+      "name": "Lime Concrete",
+      "x": 80,
+      "y": 0,
+      "w": 16,
+      "h": 16,
+      "avgColor": "#5ea919",
+      "lab": [
+        62.36,
+        -45.51,
+        59.55
+      ],
+      "category": "concrete",
+      "obtainable": true
+    },
+    {
+      "id": "minecraft:pink_concrete",
+      "name": "Pink Concrete",
+      "x": 96,
+      "y": 0,
+      "w": 16,
+      "h": 16,
+      "avgColor": "#d6658f",
+      "lab": [
+        57.64,
+        48.78,
+        -1.65
+      ],
+      "category": "concrete",
+      "obtainable": true
+    },
+    {
+      "id": "minecraft:gray_concrete",
+      "name": "Gray Concrete",
+      "x": 112,
+      "y": 0,
+      "w": 16,
+      "h": 16,
+      "avgColor": "#373a3e",
+      "lab": [
+        24.28,
+        -0.3,
+        -2.92
+      ],
+      "category": "concrete",
+      "obtainable": true
+    },
+    {
+      "id": "minecraft:light_gray_concrete",
+      "name": "Light Gray Concrete",
+      "x": 128,
+      "y": 0,
+      "w": 16,
+      "h": 16,
+      "avgColor": "#7d7d73",
+      "lab": [
+        52.14,
+        -1.92,
+        5.45
+      ],
+      "category": "concrete",
+      "obtainable": true
+    },
+    {
+      "id": "minecraft:cyan_concrete",
+      "name": "Cyan Concrete",
+      "x": 144,
+      "y": 0,
+      "w": 16,
+      "h": 16,
+      "avgColor": "#157788",
+      "lab": [
+        45.81,
+        -20.21,
+        -16.89
+      ],
+      "category": "concrete",
+      "obtainable": true
+    },
+    {
+      "id": "minecraft:purple_concrete",
+      "name": "Purple Concrete",
+      "x": 160,
+      "y": 0,
+      "w": 16,
+      "h": 16,
+      "avgColor": "#64209c",
+      "lab": [
+        29.77,
+        51.96,
+        -54.08
+      ],
+      "category": "concrete",
+      "obtainable": true
+    },
+    {
+      "id": "minecraft:blue_concrete",
+      "name": "Blue Concrete",
+      "x": 176,
+      "y": 0,
+      "w": 16,
+      "h": 16,
+      "avgColor": "#2d2f8f",
+      "lab": [
+        25.49,
+        31.33,
+        -53.34
+      ],
+      "category": "concrete",
+      "obtainable": true
+    },
+    {
+      "id": "minecraft:brown_concrete",
+      "name": "Brown Concrete",
+      "x": 192,
+      "y": 0,
+      "w": 16,
+      "h": 16,
+      "avgColor": "#603c20",
+      "lab": [
+        28.96,
+        12.75,
+        23.57
+      ],
+      "category": "concrete",
+      "obtainable": true
+    },
+    {
+      "id": "minecraft:green_concrete",
+      "name": "Green Concrete",
+      "x": 208,
+      "y": 0,
+      "w": 16,
+      "h": 16,
+      "avgColor": "#495b24",
+      "lab": [
+        36.03,
+        -16.65,
+        28.96
+      ],
+      "category": "concrete",
+      "obtainable": true
+    },
+    {
+      "id": "minecraft:red_concrete",
+      "name": "Red Concrete",
+      "x": 224,
+      "y": 0,
+      "w": 16,
+      "h": 16,
+      "avgColor": "#8e2121",
+      "lab": [
+        31.69,
+        45.09,
+        28.17
+      ],
+      "category": "concrete",
+      "obtainable": true
+    },
+    {
+      "id": "minecraft:black_concrete",
+      "name": "Black Concrete",
+      "x": 240,
+      "y": 0,
+      "w": 16,
+      "h": 16,
+      "avgColor": "#080a0f",
+      "lab": [
+        2.74,
+        0.28,
+        -2.36
+      ],
+      "category": "concrete",
+      "obtainable": true
+    },
+    {
+      "id": "minecraft:white_wool",
+      "name": "White Wool",
+      "x": 0,
+      "y": 16,
+      "w": 16,
+      "h": 16,
+      "avgColor": "#eaeced",
+      "lab": [
+        93.28,
+        -0.48,
+        -0.73
+      ],
+      "category": "wool",
+      "obtainable": true
+    },
+    {
+      "id": "minecraft:orange_wool",
+      "name": "Orange Wool",
+      "x": 16,
+      "y": 16,
+      "w": 16,
+      "h": 16,
+      "avgColor": "#f17614",
+      "lab": [
+        63.1,
+        42.53,
+        67.12
+      ],
+      "category": "wool",
+      "obtainable": true
+    },
+    {
+      "id": "minecraft:magenta_wool",
+      "name": "Magenta Wool",
+      "x": 32,
+      "y": 16,
+      "w": 16,
+      "h": 16,
+      "avgColor": "#be45b4",
+      "lab": [
+        50.1,
+        61.49,
+        -35.11
+      ],
+      "category": "wool",
+      "obtainable": true
+    },
+    {
+      "id": "minecraft:light_blue_wool",
+      "name": "Light Blue Wool",
+      "x": 48,
+      "y": 16,
+      "w": 16,
+      "h": 16,
+      "avgColor": "#3aafd9",
+      "lab": [
+        66.95,
+        -18.64,
+        -30.53
+      ],
+      "category": "wool",
+      "obtainable": true
+    },
+    {
+      "id": "minecraft:yellow_wool",
+      "name": "Yellow Wool",
+      "x": 64,
+      "y": 16,
+      "w": 16,
+      "h": 16,
+      "avgColor": "#f9c628",
+      "lab": [
+        82.21,
+        4.76,
+        77.39
+      ],
+      "category": "wool",
+      "obtainable": true
+    },
+    {
+      "id": "minecraft:lime_wool",
+      "name": "Lime Wool",
+      "x": 80,
+      "y": 16,
+      "w": 16,
+      "h": 16,
+      "avgColor": "#70b91a",
+      "lab": [
+        68.18,
+        -45.87,
+        64.72
+      ],
+      "category": "wool",
+      "obtainable": true
+    },
+    {
+      "id": "minecraft:pink_wool",
+      "name": "Pink Wool",
+      "x": 96,
+      "y": 16,
+      "w": 16,
+      "h": 16,
+      "avgColor": "#ee8dac",
+      "lab": [
+        69.62,
+        40.51,
+        -0.29
+      ],
+      "category": "wool",
+      "obtainable": true
+    },
+    {
+      "id": "minecraft:gray_wool",
+      "name": "Gray Wool",
+      "x": 112,
+      "y": 16,
+      "w": 16,
+      "h": 16,
+      "avgColor": "#3f4448",
+      "lab": [
+        28.54,
+        -1.1,
+        -3.12
+      ],
+      "category": "wool",
+      "obtainable": true
+    },
+    {
+      "id": "minecraft:light_gray_wool",
+      "name": "Light Gray Wool",
+      "x": 128,
+      "y": 16,
+      "w": 16,
+      "h": 16,
+      "avgColor": "#8e8e87",
+      "lab": [
+        58.83,
+        -1.33,
+        3.72
+      ],
+      "category": "wool",
+      "obtainable": true
+    },
+    {
+      "id": "minecraft:cyan_wool",
+      "name": "Cyan Wool",
+      "x": 144,
+      "y": 16,
+      "w": 16,
+      "h": 16,
+      "avgColor": "#158a91",
+      "lab": [
+        52.26,
+        -27.03,
+        -12.38
+      ],
+      "category": "wool",
+      "obtainable": true
+    },
+    {
+      "id": "minecraft:purple_wool",
+      "name": "Purple Wool",
+      "x": 160,
+      "y": 16,
+      "w": 16,
+      "h": 16,
+      "avgColor": "#7a2aad",
+      "lab": [
+        35.62,
+        55.85,
+        -54.69
+      ],
+      "category": "wool",
+      "obtainable": true
+    },
+    {
+      "id": "minecraft:blue_wool",
+      "name": "Blue Wool",
+      "x": 176,
+      "y": 16,
+      "w": 16,
+      "h": 16,
+      "avgColor": "#35399d",
+      "lab": [
+        29.71,
+        31.03,
+        -55
+      ],
+      "category": "wool",
+      "obtainable": true
+    },
+    {
+      "id": "minecraft:brown_wool",
+      "name": "Brown Wool",
+      "x": 192,
+      "y": 16,
+      "w": 16,
+      "h": 16,
+      "avgColor": "#724829",
+      "lab": [
+        34.75,
+        14.58,
+        25.74
+      ],
+      "category": "wool",
+      "obtainable": true
+    },
+    {
+      "id": "minecraft:green_wool",
+      "name": "Green Wool",
+      "x": 208,
+      "y": 16,
+      "w": 16,
+      "h": 16,
+      "avgColor": "#556e1c",
+      "lab": [
+        43.01,
+        -22.07,
+        40.43
+      ],
+      "category": "wool",
+      "obtainable": true
+    },
+    {
+      "id": "minecraft:red_wool",
+      "name": "Red Wool",
+      "x": 224,
+      "y": 16,
+      "w": 16,
+      "h": 16,
+      "avgColor": "#a12723",
+      "lab": [
+        36.27,
+        49.19,
+        33.07
+      ],
+      "category": "wool",
+      "obtainable": true
+    },
+    {
+      "id": "minecraft:black_wool",
+      "name": "Black Wool",
+      "x": 240,
+      "y": 16,
+      "w": 16,
+      "h": 16,
+      "avgColor": "#15151a",
+      "lab": [
+        6.96,
+        1.3,
+        -3.46
+      ],
+      "category": "wool",
+      "obtainable": true
+    },
+    {
+      "id": "minecraft:terracotta",
+      "name": "Terracotta",
+      "x": 0,
+      "y": 32,
+      "w": 16,
+      "h": 16,
+      "avgColor": "#985e44",
+      "lab": [
+        45.77,
+        20.86,
+        24.75
+      ],
+      "category": "terracotta",
+      "obtainable": true
+    },
+    {
+      "id": "minecraft:white_terracotta",
+      "name": "White Terracotta",
+      "x": 16,
+      "y": 32,
+      "w": 16,
+      "h": 16,
+      "avgColor": "#d2b2a1",
+      "lab": [
+        74.9,
+        8.93,
+        12.97
+      ],
+      "category": "terracotta",
+      "obtainable": true
+    },
+    {
+      "id": "minecraft:orange_terracotta",
+      "name": "Orange Terracotta",
+      "x": 32,
+      "y": 32,
+      "w": 16,
+      "h": 16,
+      "avgColor": "#a25426",
+      "lab": [
+        44.46,
+        28.73,
+        40.08
+      ],
+      "category": "terracotta",
+      "obtainable": true
+    },
+    {
+      "id": "minecraft:yellow_terracotta",
+      "name": "Yellow Terracotta",
+      "x": 48,
+      "y": 32,
+      "w": 16,
+      "h": 16,
+      "avgColor": "#ba8523",
+      "lab": [
+        59.28,
+        11.88,
+        56.59
+      ],
+      "category": "terracotta",
+      "obtainable": true
+    },
+    {
+      "id": "minecraft:red_terracotta",
+      "name": "Red Terracotta",
+      "x": 64,
+      "y": 32,
+      "w": 16,
+      "h": 16,
+      "avgColor": "#8f3d2f",
+      "lab": [
+        36.71,
+        33.74,
+        25.59
+      ],
+      "category": "terracotta",
+      "obtainable": true
+    },
+    {
+      "id": "minecraft:brown_terracotta",
+      "name": "Brown Terracotta",
+      "x": 80,
+      "y": 32,
+      "w": 16,
+      "h": 16,
+      "avgColor": "#4d3324",
+      "lab": [
+        23.91,
+        9.69,
+        14.22
+      ],
+      "category": "terracotta",
+      "obtainable": true
+    },
+    {
+      "id": "minecraft:light_gray_terracotta",
+      "name": "Light Gray Terracotta",
+      "x": 96,
+      "y": 32,
+      "w": 16,
+      "h": 16,
+      "avgColor": "#876b62",
+      "lab": [
+        47.69,
+        9.69,
+        9.27
+      ],
+      "category": "terracotta",
+      "obtainable": true
+    },
+    {
+      "id": "minecraft:oak_planks",
+      "name": "Oak Planks",
+      "x": 112,
+      "y": 32,
+      "w": 16,
+      "h": 16,
+      "avgColor": "#a2834f",
+      "lab": [
+        56.56,
+        5.12,
+        32.43
+      ],
+      "category": "wood",
+      "obtainable": true
+    },
+    {
+      "id": "minecraft:spruce_planks",
+      "name": "Spruce Planks",
+      "x": 128,
+      "y": 32,
+      "w": 16,
+      "h": 16,
+      "avgColor": "#735531",
+      "lab": [
+        38.49,
+        7.86,
+        25.66
+      ],
+      "category": "wood",
+      "obtainable": true
+    },
+    {
+      "id": "minecraft:birch_planks",
+      "name": "Birch Planks",
+      "x": 144,
+      "y": 32,
+      "w": 16,
+      "h": 16,
+      "avgColor": "#c0af79",
+      "lab": [
+        71.72,
+        -1.8,
+        29.93
+      ],
+      "category": "wood",
+      "obtainable": true
+    },
+    {
+      "id": "minecraft:jungle_planks",
+      "name": "Jungle Planks",
+      "x": 160,
+      "y": 32,
+      "w": 16,
+      "h": 16,
+      "avgColor": "#a07351",
+      "lab": [
+        52.21,
+        13.52,
+        25.76
+      ],
+      "category": "wood",
+      "obtainable": true
+    },
+    {
+      "id": "minecraft:acacia_planks",
+      "name": "Acacia Planks",
+      "x": 176,
+      "y": 32,
+      "w": 16,
+      "h": 16,
+      "avgColor": "#a85a32",
+      "lab": [
+        46.8,
+        28.58,
+        36.63
+      ],
+      "category": "wood",
+      "obtainable": true
+    },
+    {
+      "id": "minecraft:dark_oak_planks",
+      "name": "Dark Oak Planks",
+      "x": 192,
+      "y": 32,
+      "w": 16,
+      "h": 16,
+      "avgColor": "#432b14",
+      "lab": [
+        19.93,
+        8.33,
+        19.23
+      ],
+      "category": "wood",
+      "obtainable": true
+    },
+    {
+      "id": "minecraft:mangrove_planks",
+      "name": "Mangrove Planks",
+      "x": 208,
+      "y": 32,
+      "w": 16,
+      "h": 16,
+      "avgColor": "#763631",
+      "lab": [
+        31.14,
+        27.58,
+        16.45
+      ],
+      "category": "wood",
+      "obtainable": true
+    },
+    {
+      "id": "minecraft:cherry_planks",
+      "name": "Cherry Planks",
+      "x": 224,
+      "y": 32,
+      "w": 16,
+      "h": 16,
+      "avgColor": "#e3b3ad",
+      "lab": [
+        77.03,
+        16.51,
+        9.71
+      ],
+      "category": "wood",
+      "obtainable": true
+    },
+    {
+      "id": "minecraft:bamboo_planks",
+      "name": "Bamboo Planks",
+      "x": 240,
+      "y": 32,
+      "w": 16,
+      "h": 16,
+      "avgColor": "#c1ad50",
+      "lab": [
+        70.74,
+        -4.28,
+        49.48
+      ],
+      "category": "wood",
+      "obtainable": true
+    },
+    {
+      "id": "minecraft:crimson_planks",
+      "name": "Crimson Planks",
+      "x": 0,
+      "y": 48,
+      "w": 16,
+      "h": 16,
+      "avgColor": "#653147",
+      "lab": [
+        27.89,
+        26.23,
+        -2.91
+      ],
+      "category": "wood",
+      "obtainable": true
+    },
+    {
+      "id": "minecraft:warped_planks",
+      "name": "Warped Planks",
+      "x": 16,
+      "y": 48,
+      "w": 16,
+      "h": 16,
+      "avgColor": "#2b6963",
+      "lab": [
+        40.44,
+        -21.44,
+        -2.64
+      ],
+      "category": "wood",
+      "obtainable": true
+    },
+    {
+      "id": "minecraft:stone",
+      "name": "Stone",
+      "x": 32,
+      "y": 48,
+      "w": 16,
+      "h": 16,
+      "avgColor": "#7e7e7e",
+      "lab": [
+        52.8,
+        0,
+        -0.01
+      ],
+      "category": "stone",
+      "obtainable": true
+    },
+    {
+      "id": "minecraft:cobblestone",
+      "name": "Cobblestone",
+      "x": 48,
+      "y": 48,
+      "w": 16,
+      "h": 16,
+      "avgColor": "#807f80",
+      "lab": [
+        53.3,
+        0.58,
+        -0.42
+      ],
+      "category": "stone",
+      "obtainable": true
+    },
+    {
+      "id": "minecraft:mossy_cobblestone",
+      "name": "Mossy Cobblestone",
+      "x": 64,
+      "y": 48,
+      "w": 16,
+      "h": 16,
+      "avgColor": "#6e775f",
+      "lab": [
+        48.68,
+        -8.03,
+        12.09
+      ],
+      "category": "stone",
+      "obtainable": true
+    },
+    {
+      "id": "minecraft:stone_bricks",
+      "name": "Stone Bricks",
+      "x": 80,
+      "y": 48,
+      "w": 16,
+      "h": 16,
+      "avgColor": "#7a7a7a",
+      "lab": [
+        51.22,
+        0,
+        -0.01
+      ],
+      "category": "stone",
+      "obtainable": true
+    },
+    {
+      "id": "minecraft:deepslate",
+      "name": "Deepslate",
+      "x": 96,
+      "y": 48,
+      "w": 16,
+      "h": 16,
+      "avgColor": "#505053",
+      "lab": [
+        34.12,
+        0.66,
+        -1.76
+      ],
+      "category": "stone",
+      "obtainable": true
+    },
+    {
+      "id": "minecraft:cobbled_deepslate",
+      "name": "Cobbled Deepslate",
+      "x": 112,
+      "y": 48,
+      "w": 16,
+      "h": 16,
+      "avgColor": "#4d4d51",
+      "lab": [
+        32.87,
+        0.89,
+        -2.36
+      ],
+      "category": "stone",
+      "obtainable": true
+    },
+    {
+      "id": "minecraft:deepslate_bricks",
+      "name": "Deepslate Bricks",
+      "x": 128,
+      "y": 48,
+      "w": 16,
+      "h": 16,
+      "avgColor": "#474747",
+      "lab": [
+        30.16,
+        0,
+        0
+      ],
+      "category": "stone",
+      "obtainable": true
+    },
+    {
+      "id": "minecraft:blackstone",
+      "name": "Blackstone",
+      "x": 144,
+      "y": 48,
+      "w": 16,
+      "h": 16,
+      "avgColor": "#2a2429",
+      "lab": [
+        15.03,
+        3.97,
+        -2.28
+      ],
+      "category": "stone",
+      "obtainable": true
+    },
+    {
+      "id": "minecraft:sandstone",
+      "name": "Sandstone",
+      "x": 160,
+      "y": 48,
+      "w": 16,
+      "h": 16,
+      "avgColor": "#d8cb9c",
+      "lab": [
+        81.68,
+        -2.68,
+        25.12
+      ],
+      "category": "stone",
+      "obtainable": true
+    },
+    {
+      "id": "minecraft:red_sandstone",
+      "name": "Red Sandstone",
+      "x": 176,
+      "y": 48,
+      "w": 16,
+      "h": 16,
+      "avgColor": "#bb631d",
+      "lab": [
+        51.36,
+        30.79,
+        51.85
+      ],
+      "category": "stone",
+      "obtainable": true
+    },
+    {
+      "id": "minecraft:mud_bricks",
+      "name": "Mud Bricks",
+      "x": 192,
+      "y": 48,
+      "w": 16,
+      "h": 16,
+      "avgColor": "#89684f",
+      "lab": [
+        46.69,
+        9.71,
+        19.18
+      ],
+      "category": "stone",
+      "obtainable": true
+    },
+    {
+      "id": "minecraft:bricks",
+      "name": "Bricks",
+      "x": 208,
+      "y": 48,
+      "w": 16,
+      "h": 16,
+      "avgColor": "#976253",
+      "lab": [
+        46.89,
+        19.67,
+        17.38
+      ],
+      "category": "stone",
+      "obtainable": true
+    },
+    {
+      "id": "minecraft:dirt",
+      "name": "Dirt",
+      "x": 224,
+      "y": 48,
+      "w": 16,
+      "h": 16,
+      "avgColor": "#866043",
+      "lab": [
+        44,
+        11.74,
+        22.61
+      ],
+      "category": "natural",
+      "obtainable": true
+    },
+    {
+      "id": "minecraft:grass_block",
+      "name": "Grass Block",
+      "x": 240,
+      "y": 48,
+      "w": 16,
+      "h": 16,
+      "avgColor": "#546d33",
+      "lab": [
+        42.86,
+        -19.85,
+        29.19
+      ],
+      "category": "natural",
+      "obtainable": true
+    },
+    {
+      "id": "minecraft:coarse_dirt",
+      "name": "Coarse Dirt",
+      "x": 0,
+      "y": 64,
+      "w": 16,
+      "h": 16,
+      "avgColor": "#77563b",
+      "lab": [
+        39.4,
+        10.11,
+        21.04
+      ],
+      "category": "natural",
+      "obtainable": true
+    },
+    {
+      "id": "minecraft:sand",
+      "name": "Sand",
+      "x": 16,
+      "y": 64,
+      "w": 16,
+      "h": 16,
+      "avgColor": "#dbcfa3",
+      "lab": [
+        83.09,
+        -2.67,
+        23.41
+      ],
+      "category": "natural",
+      "obtainable": true
+    },
+    {
+      "id": "minecraft:red_sand",
+      "name": "Red Sand",
+      "x": 32,
+      "y": 64,
+      "w": 16,
+      "h": 16,
+      "avgColor": "#bf6721",
+      "lab": [
+        52.83,
+        30.44,
+        51.8
+      ],
+      "category": "natural",
+      "obtainable": true
+    },
+    {
+      "id": "minecraft:gravel",
+      "name": "Gravel",
+      "x": 48,
+      "y": 64,
+      "w": 16,
+      "h": 16,
+      "avgColor": "#847f7f",
+      "lab": [
+        53.62,
+        1.89,
+        0.67
+      ],
+      "category": "natural",
+      "obtainable": true
+    },
+    {
+      "id": "minecraft:clay",
+      "name": "Clay",
+      "x": 64,
+      "y": 64,
+      "w": 16,
+      "h": 16,
+      "avgColor": "#a1a6b3",
+      "lab": [
+        68.1,
+        0.85,
+        -7.3
+      ],
+      "category": "natural",
+      "obtainable": true
+    },
+    {
+      "id": "minecraft:snow_block",
+      "name": "Snow Block",
+      "x": 80,
+      "y": 64,
+      "w": 16,
+      "h": 16,
+      "avgColor": "#f9fefe",
+      "lab": [
+        99.29,
+        -1.64,
+        -0.58
+      ],
+      "category": "natural",
+      "obtainable": true
+    },
+    {
+      "id": "minecraft:ice",
+      "name": "Ice",
+      "x": 96,
+      "y": 64,
+      "w": 16,
+      "h": 16,
+      "avgColor": "#92b8fe",
+      "lab": [
+        74.54,
+        4.81,
+        -38.61
+      ],
+      "category": "natural",
+      "obtainable": true
+    },
+    {
+      "id": "minecraft:packed_ice",
+      "name": "Packed Ice",
+      "x": 112,
+      "y": 64,
+      "w": 16,
+      "h": 16,
+      "avgColor": "#8eb4fa",
+      "lab": [
+        73.09,
+        4.93,
+        -38.73
+      ],
+      "category": "natural",
+      "obtainable": true
+    },
+    {
+      "id": "minecraft:obsidian",
+      "name": "Obsidian",
+      "x": 128,
+      "y": 64,
+      "w": 16,
+      "h": 16,
+      "avgColor": "#0f0b19",
+      "lab": [
+        3.71,
+        4.15,
+        -7.52
+      ],
+      "category": "natural",
+      "obtainable": true
+    },
+    {
+      "id": "minecraft:netherrack",
+      "name": "Netherrack",
+      "x": 144,
+      "y": 64,
+      "w": 16,
+      "h": 16,
+      "avgColor": "#622626",
+      "lab": [
+        24.07,
+        27.24,
+        13.73
+      ],
+      "category": "natural",
+      "obtainable": true
+    },
+    {
+      "id": "minecraft:end_stone",
+      "name": "End Stone",
+      "x": 160,
+      "y": 64,
+      "w": 16,
+      "h": 16,
+      "avgColor": "#dcdf9e",
+      "lab": [
+        87.22,
+        -11.12,
+        31.6
+      ],
+      "category": "natural",
+      "obtainable": true
+    },
+    {
+      "id": "minecraft:moss_block",
+      "name": "Moss Block",
+      "x": 176,
+      "y": 64,
+      "w": 16,
+      "h": 16,
+      "avgColor": "#596e2d",
+      "lab": [
+        43.46,
+        -18.91,
+        33.13
+      ],
+      "category": "natural",
+      "obtainable": true
+    },
+    {
+      "id": "minecraft:hay_block",
+      "name": "Hay Bale",
+      "x": 192,
+      "y": 64,
+      "w": 16,
+      "h": 16,
+      "avgColor": "#a68826",
+      "lab": [
+        57.9,
+        1.31,
+        53.42
+      ],
+      "category": "natural",
+      "obtainable": true
+    },
+    {
+      "id": "minecraft:pumpkin",
+      "name": "Pumpkin",
+      "x": 208,
+      "y": 64,
+      "w": 16,
+      "h": 16,
+      "avgColor": "#c47318",
+      "lab": [
+        56.15,
+        25.85,
+        58.04
+      ],
+      "category": "natural",
+      "obtainable": true
+    },
+    {
+      "id": "minecraft:melon",
+      "name": "Melon",
+      "x": 224,
+      "y": 64,
+      "w": 16,
+      "h": 16,
+      "avgColor": "#72921e",
+      "lab": [
+        56.32,
+        -27.52,
+        53.13
+      ],
+      "category": "natural",
+      "obtainable": true
+    },
+    {
+      "id": "minecraft:dried_kelp_block",
+      "name": "Dried Kelp Block",
+      "x": 240,
+      "y": 64,
+      "w": 16,
+      "h": 16,
+      "avgColor": "#26311e",
+      "lab": [
+        18.81,
+        -9.03,
+        10.65
+      ],
+      "category": "natural",
+      "obtainable": true
+    },
+    {
+      "id": "minecraft:sponge",
+      "name": "Sponge",
+      "x": 0,
+      "y": 80,
+      "w": 16,
+      "h": 16,
+      "avgColor": "#c4c04b",
+      "lab": [
+        76.03,
+        -13.21,
+        57.65
+      ],
+      "category": "natural",
+      "obtainable": true
+    },
+    {
+      "id": "minecraft:mud",
+      "name": "Mud",
+      "x": 16,
+      "y": 80,
+      "w": 16,
+      "h": 16,
+      "avgColor": "#3c393d",
+      "lab": [
+        24.4,
+        2.2,
+        -2.02
+      ],
+      "category": "natural",
+      "obtainable": true
+    },
+    {
+      "id": "minecraft:soul_sand",
+      "name": "Soul Sand",
+      "x": 32,
+      "y": 80,
+      "w": 16,
+      "h": 16,
+      "avgColor": "#513e33",
+      "lab": [
+        27.94,
+        6.49,
+        9.94
+      ],
+      "category": "natural",
+      "obtainable": true
+    },
+    {
+      "id": "minecraft:mycelium",
+      "name": "Mycelium",
+      "x": 48,
+      "y": 80,
+      "w": 16,
+      "h": 16,
+      "avgColor": "#3e3033",
+      "lab": [
+        21.49,
+        6.94,
+        0.5
+      ],
+      "category": "natural",
+      "obtainable": true
+    },
+    {
+      "id": "minecraft:iron_block",
+      "name": "Block of Iron",
+      "x": 64,
+      "y": 80,
+      "w": 16,
+      "h": 16,
+      "avgColor": "#dcdcdc",
+      "lab": [
+        87.76,
+        0,
+        -0.01
+      ],
+      "category": "mineral",
+      "obtainable": true
+    },
+    {
+      "id": "minecraft:gold_block",
+      "name": "Block of Gold",
+      "x": 80,
+      "y": 80,
+      "w": 16,
+      "h": 16,
+      "avgColor": "#f6d03e",
+      "lab": [
+        84.51,
+        -0.93,
+        72.65
+      ],
+      "category": "mineral",
+      "obtainable": true
+    },
+    {
+      "id": "minecraft:diamond_block",
+      "name": "Block of Diamond",
+      "x": 96,
+      "y": 80,
+      "w": 16,
+      "h": 16,
+      "avgColor": "#62ede4",
+      "lab": [
+        86.39,
+        -39.53,
+        -6.95
+      ],
+      "category": "mineral",
+      "obtainable": true
+    },
+    {
+      "id": "minecraft:emerald_block",
+      "name": "Block of Emerald",
+      "x": 112,
+      "y": 80,
+      "w": 16,
+      "h": 16,
+      "avgColor": "#2acb58",
+      "lab": [
+        72.17,
+        -63.69,
+        45.52
+      ],
+      "category": "mineral",
+      "obtainable": true
+    },
+    {
+      "id": "minecraft:lapis_block",
+      "name": "Block of Lapis",
+      "x": 128,
+      "y": 80,
+      "w": 16,
+      "h": 16,
+      "avgColor": "#1f438c",
+      "lab": [
+        29.91,
+        14.71,
+        -44.32
+      ],
+      "category": "mineral",
+      "obtainable": true
+    },
+    {
+      "id": "minecraft:redstone_block",
+      "name": "Block of Redstone",
+      "x": 144,
+      "y": 80,
+      "w": 16,
+      "h": 16,
+      "avgColor": "#b01905",
+      "lab": [
+        37.73,
+        57.02,
+        49.42
+      ],
+      "category": "mineral",
+      "obtainable": true
+    },
+    {
+      "id": "minecraft:coal_block",
+      "name": "Block of Coal",
+      "x": 160,
+      "y": 80,
+      "w": 16,
+      "h": 16,
+      "avgColor": "#101010",
+      "lab": [
+        4.68,
+        0,
+        0
+      ],
+      "category": "mineral",
+      "obtainable": true
+    },
+    {
+      "id": "minecraft:copper_block",
+      "name": "Block of Copper",
+      "x": 176,
+      "y": 80,
+      "w": 16,
+      "h": 16,
+      "avgColor": "#c06c50",
+      "lab": [
+        54.56,
+        30.69,
+        30.15
+      ],
+      "category": "mineral",
+      "obtainable": true
+    },
+    {
+      "id": "minecraft:quartz_block",
+      "name": "Block of Quartz",
+      "x": 192,
+      "y": 80,
+      "w": 16,
+      "h": 16,
+      "avgColor": "#ece6df",
+      "lab": [
+        91.57,
+        0.82,
+        4.11
+      ],
+      "category": "mineral",
+      "obtainable": true
+    },
+    {
+      "id": "minecraft:glowstone",
+      "name": "Glowstone",
+      "x": 208,
+      "y": 80,
+      "w": 16,
+      "h": 16,
+      "avgColor": "#ac8354",
+      "lab": [
+        57.7,
+        9.92,
+        31.37
+      ],
+      "category": "special",
+      "obtainable": true
+    },
+    {
+      "id": "minecraft:sea_lantern",
+      "name": "Sea Lantern",
+      "x": 224,
+      "y": 80,
+      "w": 16,
+      "h": 16,
+      "avgColor": "#acc8bf",
+      "lab": [
+        78.37,
+        -11.17,
+        1.33
+      ],
+      "category": "special",
+      "obtainable": true
+    },
+    {
+      "id": "minecraft:prismarine",
+      "name": "Prismarine",
+      "x": 240,
+      "y": 80,
+      "w": 16,
+      "h": 16,
+      "avgColor": "#63a292",
+      "lab": [
+        62.14,
+        -24.1,
+        1.94
+      ],
+      "category": "special",
+      "obtainable": true
+    },
+    {
+      "id": "minecraft:dark_prismarine",
+      "name": "Dark Prismarine",
+      "x": 0,
+      "y": 96,
+      "w": 16,
+      "h": 16,
+      "avgColor": "#345c4c",
+      "lab": [
+        35.8,
+        -18.32,
+        4.82
+      ],
+      "category": "special",
+      "obtainable": true
+    },
+    {
+      "id": "minecraft:purpur_block",
+      "name": "Purpur Block",
+      "x": 16,
+      "y": 96,
+      "w": 16,
+      "h": 16,
+      "avgColor": "#aa7eaa",
+      "lab": [
+        58.39,
+        24.63,
+        -16.72
+      ],
+      "category": "special",
+      "obtainable": true
+    },
+    {
+      "id": "minecraft:nether_bricks",
+      "name": "Nether Bricks",
+      "x": 32,
+      "y": 96,
+      "w": 16,
+      "h": 16,
+      "avgColor": "#2c161a",
+      "lab": [
+        10.44,
+        11.8,
+        2.01
+      ],
+      "category": "special",
+      "obtainable": true
+    },
+    {
+      "id": "minecraft:red_nether_bricks",
+      "name": "Red Nether Bricks",
+      "x": 48,
+      "y": 96,
+      "w": 16,
+      "h": 16,
+      "avgColor": "#460709",
+      "lab": [
+        12.44,
+        29.05,
+        15.68
+      ],
+      "category": "special",
+      "obtainable": true
+    },
+    {
+      "id": "minecraft:water",
+      "name": "Water",
+      "x": 64,
+      "y": 96,
+      "w": 16,
+      "h": 16,
+      "avgColor": "#2c529f",
+      "lab": [
+        36.12,
+        13.81,
+        -45.83
+      ],
+      "category": "special",
+      "obtainable": false
+    }
+  ]
+}
