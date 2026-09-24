@@ -3,6 +3,7 @@ import { IBM_Plex_Mono, IBM_Plex_Sans, Space_Grotesk } from 'next/font/google';
 import Script from 'next/script';
 import { SiteHeader } from '@/components/SiteHeader';
 import { SiteFooter } from '@/components/SiteFooter';
+import { getSiteUrl } from '@/lib/site-url';
 import './globals.css';
 
 const displayFont = Space_Grotesk({
@@ -23,7 +24,7 @@ const monoFont = IBM_Plex_Mono({
   variable: '--font-mono-count',
 });
 
-const siteUrl = process.env.NEXT_PUBLIC_SITE_URL ?? 'https://example.com';
+const siteUrl = getSiteUrl();
 const adsClient = process.env.NEXT_PUBLIC_ADSENSE_CLIENT;
 
 export const viewport: Viewport = {

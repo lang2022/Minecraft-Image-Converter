@@ -1,4 +1,5 @@
 import type { MetadataRoute } from 'next';
+import { getSiteUrl } from '@/lib/site-url';
 
 export const siteRoutes = [
   { path: '', priority: 1, changeFrequency: 'weekly' as const },
@@ -21,7 +22,7 @@ export const siteRoutes = [
 export const siteLastModified = new Date('2026-09-23');
 
 export default function sitemap(): MetadataRoute.Sitemap {
-  const baseUrl = process.env.NEXT_PUBLIC_SITE_URL ?? 'https://example.com';
+  const baseUrl = getSiteUrl();
 
   return siteRoutes.map((route) => ({
     url: `${baseUrl}/${route.path}`.replace(/\/$/, ''),
