@@ -1,0 +1,16 @@
+{
+  "extends": "./tsconfig.json",
+  "compilerOptions": {
+    "noEmit": false,
+    "outDir": "out-test",
+    "rootDir": ".",
+    "module": "Node16",
+    "moduleResolution": "Node16",
+    "incremental": false,
+    "types": ["node"],
+    "lib": ["ES2022", "DOM", "DOM.Iterable"],
+    "jsx": "react-jsx"
+  },
+  "include": ["lib/**/*.ts"],
+  "exclude": ["node_modules", "app", "components", "worker"]
+}
