@@ -1,5 +1,6 @@
 import Link from 'next/link';
 import { Blocks, Download, ImagePlus, ListChecks } from 'lucide-react';
+import { getSiteUrl } from '@/lib/site-url';
 
 const features = [
   {
@@ -45,7 +46,7 @@ const jsonLd = {
     {
       '@type': 'WebApplication',
       name: 'Minecraft Pixel Art Generator & Image Converter',
-      url: 'https://example.com/pixel-art-generator',
+      url: `${getSiteUrl()}/pixel-art-generator`,
       description:
         'Turn any image into Minecraft pixel art, blocks, schematics, map art and structure files — fully client-side.',
       applicationCategory: 'MultimediaApplication',

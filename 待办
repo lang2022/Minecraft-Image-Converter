@@ -1,0 +1,35 @@
+## 待办清单（2026-06-16 更新）
+
+### 已完成
+
+- [x] 生成器接 atlas 真实纹理渲染：预览已用 loadTextureAtlas + drawPreviewGrid 按坐标贴图
+      （atlas 文件缺失时自动回退 avgColor，代码已就绪，扫描产出 atlas 后零改动生效）
+- [x] favicon / OG 图 / 品牌资产：
+      - app/icon.svg 像素心 favicon（矢量，/icon.svg 路由）
+      - public/og-default.png 1200x630（scripts/generate-og-image.mjs 生成，零依赖像素字体渲染）
+      - layout.tsx 已挂 openGraph.images + twitter.images + theme-color + icons
+      - 需要重设计时改 scripts/generate-og-image.mjs 重跑即可，不维护二进制设计稿
+- [x] 变现前置：components/AdSlot.tsx（占位符 + AdSense 双态组件，布局预留防 CLS）
+      - 已部署：首页底部 / FAQ 底部 / 两篇教程底部（生成器页有意保持无广告）
+      - 接入只需：.env 设 NEXT_PUBLIC_ADSENSE_CLIENT=ca-pub-xxx，脚本自动加载
+      - /privacy 页已含 AdSense 合规披露文案
+
+### 暂缓（用户决策）
+
+- [ ] 游戏内端到端实测：.schem/.mcstructure 在 WorldEdit / 结构方块里实际加载验证
+      （桌面验收脚本 scripts/verify-docs-samples.mjs + verify-nbt-reader.mjs 已全绿，
+       真实样本 256/256 比对通过；实测清单随时可执行）
+
+### 下一步（M4 剩余）
+
+- [ ] 相邻利基落地页（LEGO 马赛克 / 十字绣图案 / 串珠图纸）
+      - 抽 MosaicEngine：把现有转换核心泛化为"任意网格调色板系统"
+      - LEGO / 十字绣 / 串珠各一个落地页，瞄准 lego mosaic generator / cross stitch pattern generator 词族
+      - 中等规模重构 + 三个新页面
+- [ ] 变现全量接入：等 AdSense 账号 ID（占位组件已就绪，填 env 即生效）
+
+### 远期扩展（架构已预留）
+
+- 多版本色板：manifest 的 mcVersion 字段已预留。将来支持"多版本色板"（如 1.21 新方块单独成组），
+  只需再扫描一个版本的 jar 生成平行文件（blocks-palette-v3.json），前端按版本切换——
+  即文档 6.5 节规划的"多版本色板"路径，不影响现在的架构。

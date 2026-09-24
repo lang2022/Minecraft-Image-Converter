@@ -1,5 +1,6 @@
 import type { Metadata } from 'next';
 import { LegoWorkspace } from './LegoWorkspace';
+import { getSiteUrl } from '@/lib/site-url';
 
 export const metadata: Metadata = {
   title: 'LEGO Mosaic Generator — Photo to Brick Mosaic',
@@ -16,7 +17,7 @@ const jsonLd = {
     {
       '@type': 'WebApplication',
       name: 'LEGO Mosaic Generator',
-      url: 'https://example.com/lego-mosaic-generator',
+      url: `${getSiteUrl()}/lego-mosaic-generator`,
       description:
         'Convert any photo into a buildable LEGO mosaic with a studs preview, brick bill and baseplate plan — fully in-browser.',
       applicationCategory: 'MultimediaApplication',

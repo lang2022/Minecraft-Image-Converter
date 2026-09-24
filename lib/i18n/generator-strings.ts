@@ -16,6 +16,7 @@ export type GeneratorStrings = {
   palette: string;
   paletteInUse: (inUse: number, total: number) => string;
   paletteHint: string;
+  paletteVersion: string;
   resetPalette: string;
   atlasLink: string;
   actions: string;
@@ -37,6 +38,7 @@ export type GeneratorStrings = {
   uploadToGenerate: string;
   schematicExports: string;
   schematicHint: string;
+  schematicLayout: string;
   exporting: string;
   csvHeader: string;
   downloadSchem: string;
@@ -75,6 +77,7 @@ const en: GeneratorStrings = {
   palette: 'Palette',
   paletteInUse: (inUse, total) => `${inUse} of ${total} blocks in use`,
   paletteHint: 'Uncheck a family to exclude it — e.g. survival players short on stone. Converts again automatically.',
+  paletteVersion: 'Palette & exports target Java 1.20.1 (DataVersion 3465).',
   resetPalette: 'Reset to full palette',
   atlasLink: 'Browse the full block atlas →',
   actions: 'Actions',
@@ -96,6 +99,7 @@ const en: GeneratorStrings = {
   uploadToGenerate: 'Upload an image to generate a material list.',
   schematicExports: 'Schematic exports',
   schematicHint: 'Load these with WorldEdit / Litematica / Bedrock structure blocks.',
+  schematicLayout: 'Flat W×H×1 build, origin at the bottom-left; the top image row lands on the highest Y.',
   exporting: 'Exporting…',
   csvHeader: 'name,count',
   downloadSchem: 'Download .schem',
@@ -147,6 +151,7 @@ const ja: GeneratorStrings = {
   palette: '使うブロック',
   paletteInUse: (inUse, total) => `使用中：${inUse}／${total}種類`,
   paletteHint: '持っていない素材の系列は外しておけば、そのブロックを使わない設計図になります。外すと自動で変換し直します。',
+  paletteVersion: '色パレットと出力は Java 1.20.1（DataVersion 3465）に合わせています。',
   resetPalette: 'すべて元に戻す',
   atlasLink: 'ブロック図鑑を見る →',
   actions: '操作',
@@ -168,6 +173,7 @@ const ja: GeneratorStrings = {
   uploadToGenerate: '画像を変換すると、ここに素材の一覧が出ます。',
   schematicExports: '設計図の出力',
   schematicHint: 'WorldEdit・Litematica・統合版のストラクチャーブロックで読み込めます。',
+  schematicLayout: '平坦な W×H×1 の設計図です。原点は左下で、画像の上端が一番高い Y に配置されます。',
   exporting: '出力中…',
   csvHeader: 'name,count',
   downloadSchem: '.schemで保存',

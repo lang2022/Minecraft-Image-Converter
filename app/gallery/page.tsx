@@ -4,10 +4,10 @@ import Link from 'next/link';
 export const metadata: Metadata = {
   title: 'Pixel Art Examples Gallery',
   description:
-    'Before/after Minecraft pixel art examples at 32×32, 64×64 and 128×128 — open any example directly in the generator.',
+    'Before/after Minecraft pixel art examples — flat logo, portrait and landscape, each converted live to 64×64 blocks. Open any example directly in the generator.',
   openGraph: {
     title: 'Pixel Art Examples Gallery',
-    description: 'Same photo, three grids — 32, 64, 128. Open any size in the generator.',
+    description: 'Logo, portrait, landscape — three conversions, three palettes. Open any example in the generator.',
     images: [{ url: '/demo-landscape-64.png', width: 1024, height: 512, alt: 'Demo landscape converted to Minecraft blocks' }],
   },
   twitter: {
@@ -18,22 +18,28 @@ export const metadata: Metadata = {
 
 const examples = [
   {
-    size: 32,
-    title: '32×32 — Icon / avatar scale',
-    body: '1,024 blocks · few dozen block types. Best for heads, icons and quick tests.',
-    href: '/pixel-art-generator?size=32',
-  },
-  {
+    image: '/demo-logo-64.png',
+    alt: 'Flat geometric logo converted to 3 Minecraft block types at 64 by 64',
     size: 64,
-    title: '64×64 — The sweet spot',
-    body: '4,096 blocks · ~43 block types. The demo landscape below was converted live in-browser.',
-    href: '/pixel-art-generator?size=64',
+    title: '64×64 — Flat logo, few colors',
+    body: '4,096 blocks · just 3 block types. Dithering off keeps clean edges — ideal for logos and icons.',
+    href: '/pixel-art-generator?size=64&dither=0',
   },
   {
-    size: 128,
-    title: '128×128 — Mural / map scale',
-    body: '16,384 blocks · widest palette. Matches one full Minecraft map 1:1.',
-    href: '/pixel-art-generator?size=128',
+    image: '/demo-face-64.png',
+    alt: 'Portrait converted to 34 Minecraft block types at 64 by 64',
+    size: 64,
+    title: '64×64 — Portrait with gradients',
+    body: '4,096 blocks · 34 block types. Dithering on preserves skin shading — try faces and photos this way.',
+    href: '/pixel-art-generator?size=64&dither=1',
+  },
+  {
+    image: '/demo-landscape-64.png',
+    alt: 'Landscape photo converted to Minecraft blocks at 64 by 64',
+    size: 64,
+    title: '64×64 — Landscape photo',
+    body: '4,096 blocks · converted live in-browser. The classic test: sky, rock, water and grass in one image.',
+    href: '/pixel-art-generator?size=64',
   },
 ];
 
@@ -42,10 +48,11 @@ export default function GalleryPage() {
     <main className="mx-auto w-full max-w-7xl px-6 py-10 lg:px-10">
       <p className="eyebrow">Gallery</p>
       <h1 className="mt-3 text-4xl font-bold text-neutral-100 sm:text-5xl">
-        Before → after, at three sizes
+        Before → after, three image types
       </h1>
-      <p className="mt-4 max-w-2xl text-lg leading-7 text-neutral-400">
-        Same photo, three grids. Pick a size and open it in the generator —
+      <p className="mt-4 max-w-2xl text-lg leading-7 text-neutral-300">
+        Logo, portrait, landscape — each converted live in-browser through the
+        real palette. Pick a card and open it in the generator —
         settings travel in the URL, your image never leaves the browser.
       </p>
 
@@ -53,8 +60,8 @@ export default function GalleryPage() {
         {examples.map((example) => (
           <article key={example.size} className="card overflow-hidden p-4">
             <img
-              src="/demo-landscape-64.png"
-              alt={`Demo landscape converted at ${example.size} by ${example.size}`}
+              src={example.image}
+              alt={example.alt}
               className="w-full rounded-md"
               loading="lazy"
             />
@@ -70,7 +77,7 @@ export default function GalleryPage() {
         ))}
       </section>
 
-      <p className="mt-8 text-sm text-neutral-500">
+      <p className="mt-8 text-sm text-neutral-400">
         Want your build here? Convert an image, copy the settings link and send it to us —
         the best submissions join the gallery.
       </p>

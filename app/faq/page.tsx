@@ -86,8 +86,21 @@ export default function FaqPage() {
       <section className="mt-10 space-y-4">
         {faqs.map((faq) => (
           <details key={faq.q} className="group card p-5 open:bg-white/10">
-            <summary className="cursor-pointer list-none text-lg font-semibold text-neutral-100 marker:hidden">
-              <span className="mr-2 inline-block text-[#7cbe4e] transition group-open:rotate-90">▲</span>
+            <summary className="flex cursor-pointer list-none items-center text-lg font-semibold text-neutral-100 marker:hidden">
+              <svg
+                aria-hidden="true"
+                className="mr-2 inline-block h-4 w-4 shrink-0 text-[#7cbe4e] transition group-open:rotate-180"
+                viewBox="0 0 16 16"
+                fill="none"
+              >
+                <path
+                  d="M4 6l4 4 4-4"
+                  stroke="currentColor"
+                  strokeWidth="2"
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                />
+              </svg>
               {faq.q}
             </summary>
             <p className="mt-3 pl-6 leading-7 text-neutral-400">{faq.a}</p>
@@ -105,25 +118,25 @@ export default function FaqPage() {
             <ExternalLink href="https://www.minecraft.net/en-us/usage-guidelines">
               Minecraft Usage Guidelines (Mojang)
             </ExternalLink>
-            <span className="text-neutral-600"> — commercial use rules for blocks and textures.</span>
+            <span className="text-neutral-400"> — commercial use rules for blocks and textures.</span>
           </li>
           <li>
             <ExternalLink href="https://worldedit.enginehub.org/en/latest/usage/schematics/">
               WorldEdit schematics documentation
             </ExternalLink>
-            <span className="text-neutral-600"> — how //schem load and //paste work.</span>
+            <span className="text-neutral-400"> — how //schem load and //paste work.</span>
           </li>
           <li>
             <ExternalLink href="https://github.com/maruohon/litematica">
               Litematica on GitHub
             </ExternalLink>
-            <span className="text-neutral-600"> — the mod that opens .litematic files.</span>
+            <span className="text-neutral-400"> — the mod that opens .litematic files.</span>
           </li>
           <li>
             <ExternalLink href="https://github.com/SpongePowered/Schematic-Specification">
               Sponge Schematic Specification v2
             </ExternalLink>
-            <span className="text-neutral-600"> — the .schem format our exporter writes.</span>
+            <span className="text-neutral-400"> — the .schem format our exporter writes.</span>
           </li>
         </ul>
       </section>

@@ -1,5 +1,6 @@
 import type { Metadata } from 'next';
 import { GeneratorWorkspace } from '../../pixel-art-generator/GeneratorWorkspace';
+import { getSiteUrl } from '@/lib/site-url';
 
 /* NEEDS-NATIVE-REVIEW: Japanese copy on this page is a first draft
    (machine-assisted). Have a native speaker review before treating /ja
@@ -26,7 +27,7 @@ const jsonLd = {
     {
       '@type': 'WebApplication',
       name: 'マイクラ ドット絵ジェネレーター',
-      url: 'https://example.com/ja/pixel-art-generator',
+      url: `${getSiteUrl()}/ja/pixel-art-generator`,
       inLanguage: 'ja',
       description:
         '画像をマイクラのドット絵・ブロック設計図に無料で変換。必要な素材と.schem／.litematic／.mcstructureの出力に対応。',

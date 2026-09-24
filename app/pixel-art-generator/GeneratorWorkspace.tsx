@@ -445,6 +445,9 @@ export function GeneratorWorkspace({ locale = 'en' }: { locale?: GeneratorLocale
             <p className="mt-2 leading-6">
               {t.paletteHint}
             </p>
+            <p className="mt-2 text-[13px] leading-5 text-neutral-300">
+              {t.paletteVersion}
+            </p>
             <div className="mt-3 grid grid-cols-2 gap-2">
               {paletteCategories.map((category) => {
                 const excluded = excludedCategories.includes(category.id);
@@ -544,7 +547,7 @@ export function GeneratorWorkspace({ locale = 'en' }: { locale?: GeneratorLocale
                     title={`${entry.fileName} · ${entry.width}×${entry.height}${entry.dithering ? ' · dithered' : ''}`}
                   >
                     <span className="block truncate">{entry.fileName}</span>
-                    <span className="block text-xs text-neutral-600">
+                    <span className="block text-xs text-neutral-400">
                       {entry.width}×{entry.height} · {entry.materialList.length} {t.blockTypes}
                     </span>
                   </button>
@@ -641,7 +644,7 @@ export function GeneratorWorkspace({ locale = 'en' }: { locale?: GeneratorLocale
         <section className="grid gap-4 md:grid-cols-2">
           <article className="card p-5">
             <h3 className="text-lg font-semibold text-neutral-100">{t.materialList}</h3>
-            <p className="mt-1 text-sm text-neutral-500">{t.totalBlocks(totalBlocks)}</p>
+            <p className="mt-1 text-sm text-neutral-400">{t.totalBlocks(totalBlocks)}</p>
             <div className="legend-scroll mt-4 max-h-72 space-y-3 overflow-y-auto pr-1">
               {materials.length ? (
                 materials.map((item) => (
@@ -651,20 +654,21 @@ export function GeneratorWorkspace({ locale = 'en' }: { locale?: GeneratorLocale
                   </div>
                 ))
               ) : (
-                <p className="text-sm text-neutral-500">{t.uploadToGenerate}</p>
+                <p className="text-sm text-neutral-400">{t.uploadToGenerate}</p>
               )}
             </div>
           </article>
 
           <article className="card p-5">
             <h3 className="text-lg font-semibold text-neutral-100">{t.schematicExports}</h3>
-            <p className="mt-1 text-sm text-neutral-500">{t.schematicHint}</p>
-            <ul className="mt-2 space-y-1 text-xs leading-5 text-neutral-500">
+            <p className="mt-1 text-sm text-neutral-400">{t.schematicHint}</p>
+            <p className="mt-1 text-xs leading-5 text-neutral-400">{t.schematicLayout}</p>
+            <ul className="mt-2 space-y-1 text-xs leading-5 text-neutral-400">
               <li><span className="font-semibold text-neutral-400">.schem</span> — Java WorldEdit / Sponge (~30B per block).</li>
               <li><span className="font-semibold text-neutral-400">.litematic</span> — Litematica mod (Java).</li>
               <li><span className="font-semibold text-neutral-400">.mcstructure</span> — Bedrock structure block.</li>
             </ul>
-            <p className="mt-2 text-xs leading-6 text-neutral-600">
+            <p className="mt-2 text-xs leading-6 text-neutral-400">
               Written to spec —{' '}
               <ExternalLink href="https://github.com/SpongePowered/Schematic-Specification" className="text-xs font-semibold text-[#7cbe4e] transition hover:text-[#a3d47e]">
                 Sponge Schematic Spec v2
@@ -704,7 +708,7 @@ export function GeneratorWorkspace({ locale = 'en' }: { locale?: GeneratorLocale
                 {busyFormat === 'mcstructure' ? t.exporting : t.downloadMcstructure}
               </button>
             </div>
-            <p className="mt-4 text-sm leading-6 text-neutral-500">
+            <p className="mt-4 text-sm leading-6 text-neutral-400">
               {t.alreadyExported}{' '}
               <Link href="/litematic-viewer" className="font-semibold text-[#7cbe4e] transition hover:text-[#a3d47e]">
                 {t.inspectViewer}
